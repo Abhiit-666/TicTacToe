@@ -17,7 +17,7 @@ public class GameWebSocketHandler extends TextWebSocketHandler {
     }
 
     @Override
-    public void handleTextMessage(WebSocketSession session. TextMessage message) throws Exception{
+    public void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception{
         gameManager.processMessage(session,message.getPayload());
     }
 
